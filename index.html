@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Prestations maquillage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lato:wght@300;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      font-family: 'Lato', sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 24px;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 0 #5F5BCD, -1px -1px 0 #5F5BCD;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+    }
+
+    .section {
+      padding: 40px 20px 20px;
+    }
+
+    .texte-reductible p {
+      font-size: 15px;
+      line-height: 1.6;
+      font-style: italic;
+      margin: 0 auto;
+      max-width: 90%;
+    }
+
+    .texte-reductible strong {
+      font-style: normal;
+    }
+
+    .texte-reductible em {
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    .image-lien {
+      width: 90%;
+      max-width: 350px;
+      margin: 30px auto 20px;
+      display: block;
+      border-radius: 8px;
+      transition: transform 0.2s ease;
+    }
+
+    .image-lien:hover {
+      transform: scale(1.02);
+    }
+
+    .button-link {
+      display: inline-block;
+      padding: 12px 20px;
+      font-size: 15px;
+      font-family: 'Cinzel', serif;
+      color: #fff;
+      text-decoration: none;
+      border: 2px solid #5F5BCD;
+      border-radius: 50px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-shadow: 0 0 5px #5F5BCD;
+      transition: box-shadow 0.2s ease, transform 0.2s ease;
+      margin-bottom: 40px;
+    }
+
+    .button-link:hover {
+      box-shadow: 0 0 10px #5F5BCD;
+    }
+
+    button.toggleButton {
+      background-color: transparent;
+      color: #ffffff;
+      font-family: 'Cinzel', serif;
+      font-size: 16px;
+      border: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 10px 20px;
+      margin-top: 25px;
+      cursor: pointer;
+      text-shadow: 0 0 5px #5F5BCD;
+      transition: transform 0.2s ease;
+    }
+
+    button.toggleButton:active {
+      transform: scale(0.98);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Bloc 1 : intro -->
+  <div class="section texte-reductible">
+    <p><em>Deux univers, une même passion.</em><br>
+    Que ce soit sur un <strong>plateau de tournage</strong> ou lors d’un <strong>shooting privé</strong>, chaque projet représente une nouvelle expérience. Mon objectif est toujours de capturer et de <strong>sublimer l’essence</strong> de chaque instant, en utilisant le maquillage comme moyen d’expression et de narration.</p>
+  </div>
+
+  <!-- Bloc 2 : Cinéma -->
+  <div class="section">
+    <h2>Cinéma & Effets Spéciaux</h2>
+    <div class="texte-reductible">
+      <p id="cinemaVisible">
+        Dans l'univers du <strong>cinéma</strong> et des <strong>effets spéciaux (SFX)</strong>, je mets mes compétences au service de transformations <strong>authentiques</strong> et <strong>réalistes</strong>.<br>
+        Mon travail vise à créer des <strong>personnages</strong> et des ambiances qui enrichissent une histoire, avec un maquillage soigné et adapté aux besoins spécifiques de chaque projet.
+      </p>
+      <div id="cinemaCache" style="display: none;">
+        <p>
+          Que ce soit pour un <strong>film</strong>, une <strong>série</strong> ou une <strong>publicité</strong>, mon approche reste axée sur l’écoute des besoins du réalisateur et de l’équipe créative.
+        </p>
+      </div>
+      <button class="toggleButton" onclick="toggleTexte('cinemaCache', this)">Lire plus</button>
+    </div>
+    <a href="https://www.cdominguezmakeup.com/cin%C3%A9ma" target="_blank">
+      <img src="https://static.wixstatic.com/media/6cdb93_b1a502f834d0419d9be4c150c13bec5a~mv2.png" alt="Cinéma & SFX" class="image-lien">
+    </a>
+    <a href="https://www.cdominguezmakeup.com/cin%C3%A9ma" class="button-link" target="_blank">Découvrir cinéma & SFX</a>
+  </div>
+
+  <!-- Bloc 3 : Autres prestations -->
+  <div class="section">
+    <h2>Autres Prestations</h2>
+    <div class="texte-reductible">
+      <p id="autresVisible">
+        En dehors du cinéma, je propose mes services de maquillage pour une variété d’occasions : <strong>shootings éditoriaux</strong>, <strong>mariages</strong>, <strong>événements privés</strong>.<br>
+        Chaque prestation est personnalisée, en fonction de l’occasion et des attentes du client.
+      </p>
+      <div id="autresCache" style="display: none;">
+        <p>Mon rôle est de vous aider à vous sentir à l’aise et de mettre en valeur votre beauté, que ce soit pour un moment personnel ou un événement professionnel.</p>
+      </div>
+      <button class="toggleButton" onclick="toggleTexte('autresCache', this)">Lire plus</button>
+    </div>
+    <a href="https://www.cdominguezmakeup.com/shooting" target="_blank">
+      <img src="https://static.wixstatic.com/media/6cdb93_abe9553ae02c44ca8a22b6b0e35c6143~mv2.jpg" alt="Autres prestations" class="image-lien">
+    </a>
+    <a href="https://www.cdominguezmakeup.com/shooting" class="button-link" target="_blank">Découvrir autres prestations</a>
+  </div>
+
+  <script>
+    function toggleTexte(id, btn) {
+      const bloc = document.getElementById(id);
+      const isVisible = bloc.style.display === "block";
+      bloc.style.display = isVisible ? "none" : "block";
+      btn.innerText = isVisible ? "Lire plus" : "Lire moins";
+    }
+  </script>
+
+</body>
+</html>
