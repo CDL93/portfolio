@@ -13,6 +13,19 @@
       text-align: center;
     }
 
+    .section {
+      padding: 40px 20px 20px;
+    }
+
+    .titre-intro {
+      font-family: 'Cinzel', serif;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-shadow: 1px 1px 0 #5F5BCD, -1px -1px 0 #5F5BCD;
+      margin-bottom: 15px;
+    }
+
     h2 {
       font-family: 'Cinzel', serif;
       font-size: 24px;
@@ -22,10 +35,6 @@
       letter-spacing: 2px;
       text-decoration: underline;
       text-decoration-thickness: 1px;
-    }
-
-    .section {
-      padding: 40px 20px 20px;
     }
 
     .texte-reductible p {
@@ -50,7 +59,6 @@
       max-width: 350px;
       margin: 30px auto 20px;
       display: block;
-      border-radius: 8px;
       transition: transform 0.2s ease;
     }
 
@@ -102,8 +110,10 @@
 
   <!-- Bloc 1 : intro -->
   <div class="section texte-reductible">
-    <p><em>Deux univers, une même passion.</em><br>
-    Que ce soit sur un <strong>plateau de tournage</strong> ou lors d’un <strong>shooting privé</strong>, chaque projet représente une nouvelle expérience. Mon objectif est toujours de capturer et de <strong>sublimer l’essence</strong> de chaque instant, en utilisant le maquillage comme moyen d’expression et de narration.</p>
+    <p class="titre-intro">Deux univers, une même passion.</p>
+    <p>
+      Que ce soit sur un <strong>plateau de tournage</strong> ou lors d’un <strong>shooting privé</strong>, chaque projet représente une nouvelle expérience. Mon objectif est toujours de capturer et de <strong>sublimer l’essence</strong> de chaque instant, en utilisant le maquillage comme moyen d’expression et de narration.
+    </p>
   </div>
 
   <!-- Bloc 2 : Cinéma -->
@@ -111,13 +121,11 @@
     <h2>Cinéma & Effets Spéciaux</h2>
     <div class="texte-reductible">
       <p id="cinemaVisible">
-        Dans l'univers du <strong>cinéma</strong> et des <strong>effets spéciaux (SFX)</strong>, je mets mes compétences au service de transformations <strong>authentiques</strong> et <strong>réalistes</strong>.<br>
-        Mon travail vise à créer des <strong>personnages</strong> et des ambiances qui enrichissent une histoire, avec un maquillage soigné et adapté aux besoins spécifiques de chaque projet.
+        Dans l'univers du <strong>cinéma</strong> et des <strong>effets spéciaux (SFX)</strong>, je mets mes compétences au service de transformations <strong>authentiques</strong> et <strong>réalistes</strong>.
       </p>
       <div id="cinemaCache" style="display: none;">
-        <p>
-          Que ce soit pour un <strong>film</strong>, une <strong>série</strong> ou une <strong>publicité</strong>, mon approche reste axée sur l’écoute des besoins du réalisateur et de l’équipe créative.
-        </p>
+        <p>Mon travail vise à créer des <strong>personnages</strong> et des ambiances qui enrichissent une histoire, avec un maquillage soigné et adapté aux besoins spécifiques de chaque projet.</p>
+        <p>Que ce soit pour un <strong>film</strong>, une <strong>série</strong> ou une <strong>publicité</strong>, mon approche reste axée sur l’écoute des besoins du réalisateur et de l’équipe créative.</p>
       </div>
       <button class="toggleButton" onclick="toggleTexte('cinemaCache', this)">Lire plus</button>
     </div>
@@ -132,10 +140,10 @@
     <h2>Autres Prestations</h2>
     <div class="texte-reductible">
       <p id="autresVisible">
-        En dehors du cinéma, je propose mes services de maquillage pour une variété d’occasions : <strong>shootings éditoriaux</strong>, <strong>mariages</strong>, <strong>événements privés</strong>.<br>
-        Chaque prestation est personnalisée, en fonction de l’occasion et des attentes du client.
+        En dehors du cinéma, je propose mes services de maquillage pour une variété d’occasions : <strong>shootings éditoriaux</strong>, <strong>mariages</strong>, <strong>événements privés</strong>.
       </p>
       <div id="autresCache" style="display: none;">
+        <p>Chaque prestation est personnalisée, en fonction de l’occasion et des attentes du client.</p>
         <p>Mon rôle est de vous aider à vous sentir à l’aise et de mettre en valeur votre beauté, que ce soit pour un moment personnel ou un événement professionnel.</p>
       </div>
       <button class="toggleButton" onclick="toggleTexte('autresCache', this)">Lire plus</button>
